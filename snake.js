@@ -15,7 +15,7 @@ const ground = new Image();
 ground.src = "img/ground.png";
 
 const foodImg = new Image();
-foodImg.src = "img/food.png";
+foodImg.src = "img/xlhfood.png";
 
 // load audio files
 
@@ -99,8 +99,11 @@ function draw(){
         ctx.strokeStyle = "red";
         ctx.strokeRect(snake[i].x,snake[i].y,box,box);
     }
-    
-    ctx.drawImage(foodImg, food.x, food.y);
+    const newFoodWidth = box / 2; 
+    const newFoodHeight = box / 2; 
+    ctx.drawImage(foodImg, food.x, food.y, newFoodWidth, newFoodHeight);
+    // ctx.drawImage(foodImg, food.x, food.y);修改的部分
+
     
     // old head position
     let snakeX = snake[0].x;
