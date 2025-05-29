@@ -15,7 +15,7 @@ const ground = new Image();
 ground.src = "img/ground.png";
 
 const foodImg = new Image();
-foodImg.src = "img/xlhfood.png";
+foodImg.src = "img/food.png";
 
 // load audio files
 
